@@ -1,3 +1,22 @@
-<p>
-  vehicle-list works!
-</p>
+<h1>TuSegundazo.com</h1>
+<hr>
+<img src="assets/hero.jpg" class="img-fluid w-100"  alt="u segundazo">
+<hr>
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Línea</th>
+      <th scope="col">Modelo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vehicle of vehicles">
+      <th scope="row">{{vehicle.id}}</th>
+      <td>{{vehicle.marca}}</td>
+      <td>{{vehicle.linea}}</td>
+      <td>{{vehicle.modelo}}</td>
+    </tr>
+  </tbody>
+</table>

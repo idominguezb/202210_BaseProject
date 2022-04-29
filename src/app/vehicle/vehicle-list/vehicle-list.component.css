@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Jaldi';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+table {
+  max-width: 752px;
+}
+
+hr {
+  margin: 20px 0;
+}
