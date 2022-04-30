@@ -8,8 +8,16 @@ h1 {
 
 table {
   max-width: 752px;
+  font-size: 18px;
 }
 
 hr {
   margin: 20px 0;
+}
+
+.brands {
+  margin-top: 20px;
+  border: none;
+  line-height: 24px;
+  font-size: 20px;
 }

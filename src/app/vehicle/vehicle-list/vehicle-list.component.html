@@ -2,21 +2,28 @@
 <hr>
 <img src="assets/hero.jpg" class="img-fluid w-100"  alt="u segundazo">
 <hr>
-<table class="table">
-  <thead class="table-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Línea</th>
-      <th scope="col">Modelo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let vehicle of vehicles">
-      <th scope="row">{{vehicle.id}}</th>
-      <td>{{vehicle.marca}}</td>
-      <td>{{vehicle.linea}}</td>
-      <td>{{vehicle.modelo}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-responsive">
+    <thead class="table-dark">
+      <tr>
+        <th class="col-1">#</th>
+        <th class="col-3">Marca</th>
+        <th class="col-3">Línea</th>
+        <th class="col-5">Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehicle of vehicles">
+        <th class="col-1">{{vehicle.id}}</th>
+        <td class="col-3">{{vehicle.marca}}</td>
+        <td class="col-3">{{vehicle.linea}}</td>
+        <td class="col-5">{{vehicle.modelo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="brands">
+  <div *ngFor="let brandNumber of brandsNumbers | keyvalue">
+    Total {{brandNumber.key}}: {{brandNumber.value}}
+  </div>
+</div>
